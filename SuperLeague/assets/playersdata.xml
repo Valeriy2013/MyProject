@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Players>
+	<player>
+	    <id>12</id>
+		<name>Андрей Агафонов</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p1</photo>
+	</player>
+	<player>
+	    <id>22</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>199</_height>
+		<weight>93</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p2</photo>
+	</player>
+	<player>
+	    <id>34</id>
+		<name>Александр Александров</name>
+       	<position>Форвард</position>
+       	<age>28</age>
+		<_height>204</_height>
+		<weight>101</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p3</photo>
+	</player>
+	<player>
+	    <id>7</id>
+		<name>Евгений Анненков</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>192</_height>
+		<weight>89</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p4</photo>
+	</player>
+	<player>
+	    <id>15</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p5</photo>
+	</player>
+	<player>
+	    <id>37</id>
+		<name>Алексей Ковалев</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>201</_height>
+		<weight>99</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p6</photo>
+	</player>
+	<player>
+	    <id>13</id>
+		<name>Даррел Митчелл</name>
+       	<position>Форвард</position>
+       	<age>27</age>
+		<_height>200</_height>
+		<weight>97</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p7</photo>
+	</player>
+	<player>
+	    <id>20</id>
+		<name>Иван Кольевич</name>
+       	<position>Защитник</position>
+       	<age>30</age>
+		<_height>190</_height>
+		<weight>81</weight>
+		<citizenship>Хорватия</citizenship>
+		<team>БК Киев</team>
+		<photo>p8</photo>
+	</player>
+	<player>
+	    <id>5</id>
+		<name>Станислав Балашов</name>
+       	<position>Центр</position>
+       	<age>32</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p9</photo>
+		<player>
+	    <id>12</id>
+		<name>Андрей Агафонов</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p1</photo>
+	</player>
+	<player>
+	    <id>22</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>199</_height>
+		<weight>93</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p2</photo>
+	</player>
+	<player>
+	    <id>34</id>
+		<name>Александр Александров</name>
+       	<position>Форвард</position>
+       	<age>28</age>
+		<_height>204</_height>
+		<weight>101</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p3</photo>
+	</player>
+	<player>
+	    <id>7</id>
+		<name>Евгений Анненков</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>192</_height>
+		<weight>89</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p4</photo>
+	</player>
+	<player>
+	    <id>15</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p5</photo>
+	</player>
+	<player>
+	    <id>37</id>
+		<name>Алексей Ковалев</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>201</_height>
+		<weight>99</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p6</photo>
+	</player>
+	<player>
+	    <id>13</id>
+		<name>Даррел Митчелл</name>
+       	<position>Форвард</position>
+       	<age>27</age>
+		<_height>200</_height>
+		<weight>97</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p7</photo>
+	</player>
+	<player>
+	    <id>20</id>
+		<name>Иван Кольевич</name>
+       	<position>Защитник</position>
+       	<age>30</age>
+		<_height>190</_height>
+		<weight>81</weight>
+		<citizenship>Хорватия</citizenship>
+		<team>БК Киев</team>
+		<photo>p8</photo>
+	</player>
+	<player>
+	    <id>5</id>
+		<name>Станислав Балашов</name>
+       	<position>Центр</position>
+       	<age>32</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p9</photo>
+	</player>
+	<player>
+	    <id>12</id>
+		<name>Андрей Агафонов</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p1</photo>
+	</player>
+	<player>
+	    <id>22</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>199</_height>
+		<weight>93</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p2</photo>
+	</player>
+	<player>
+	    <id>34</id>
+		<name>Александр Александров</name>
+       	<position>Форвард</position>
+       	<age>28</age>
+		<_height>204</_height>
+		<weight>101</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p3</photo>
+	</player>
+	<player>
+	    <id>7</id>
+		<name>Евгений Анненков</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>192</_height>
+		<weight>89</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p4</photo>
+	</player>
+	<player>
+	    <id>15</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p5</photo>
+	</player>
+	<player>
+	    <id>37</id>
+		<name>Алексей Ковалев</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>201</_height>
+		<weight>99</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p6</photo>
+	</player>
+	<player>
+	    <id>13</id>
+		<name>Даррел Митчелл</name>
+       	<position>Форвард</position>
+       	<age>27</age>
+		<_height>200</_height>
+		<weight>97</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p7</photo>
+	</player>
+	<player>
+	    <id>20</id>
+		<name>Иван Кольевич</name>
+       	<position>Защитник</position>
+       	<age>30</age>
+		<_height>190</_height>
+		<weight>81</weight>
+		<citizenship>Хорватия</citizenship>
+		<team>БК Киев</team>
+		<photo>p8</photo>
+	</player>
+	<player>
+	    <id>5</id>
+		<name>Станислав Балашов</name>
+       	<position>Центр</position>
+       	<age>32</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p9</photo>
+	</player>
+	<player>
+	    <id>12</id>
+		<name>Андрей Агафонов</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p1</photo>
+	</player>
+	<player>
+	    <id>22</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>199</_height>
+		<weight>93</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p2</photo>
+	</player>
+	<player>
+	    <id>34</id>
+		<name>Александр Александров</name>
+       	<position>Форвард</position>
+       	<age>28</age>
+		<_height>204</_height>
+		<weight>101</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p3</photo>
+	</player>
+	<player>
+	    <id>7</id>
+		<name>Евгений Анненков</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>192</_height>
+		<weight>89</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p4</photo>
+	</player>
+	<player>
+	    <id>15</id>
+		<name>Петр Петров</name>
+       	<position>Защитник</position>
+       	<age>25</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Киев</team>
+		<photo>p5</photo>
+	</player>
+	<player>
+	    <id>37</id>
+		<name>Алексей Ковалев</name>
+       	<position>Форвард</position>
+       	<age>25</age>
+		<_height>201</_height>
+		<weight>99</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Донецк</team>
+		<photo>p6</photo>
+	</player>
+	<player>
+	    <id>13</id>
+		<name>Даррел Митчелл</name>
+       	<position>Форвард</position>
+       	<age>27</age>
+		<_height>200</_height>
+		<weight>97</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p7</photo>
+	</player>
+	<player>
+	    <id>20</id>
+		<name>Иван Кольевич</name>
+       	<position>Защитник</position>
+       	<age>30</age>
+		<_height>190</_height>
+		<weight>81</weight>
+		<citizenship>Хорватия</citizenship>
+		<team>БК Киев</team>
+		<photo>p8</photo>
+	</player>
+	<player>
+	    <id>5</id>
+		<name>Станислав Балашов</name>
+       	<position>Центр</position>
+       	<age>32</age>
+		<_height>212</_height>
+		<weight>111</weight>
+		<citizenship>Украина</citizenship>
+		<team>БК Одесса</team>
+		<photo>p9</photo>
+	</player>
+	</player>		
+</Players>

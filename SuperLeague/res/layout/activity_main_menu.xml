@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip" >
+
+        <Button
+            android:id="@+id/btn_teams"
+            android:text="Команды"
+            android:drawableTop="@drawable/main_menu_teams_64x64"
+            style="@style/DefaultButton" />
+
+        <Button
+            android:id="@+id/btn_players"           
+            android:drawableTop="@drawable/main_menu_players_64x64"           
+            android:text="Игроки"
+            style="@style/DefaultButton"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip" >
+
+        <Button
+            android:id="@+id/btn_video"           
+            android:drawableTop="@drawable/main_menu_video_64x64"           
+            android:text="Видео"
+            style="@style/DefaultButton"
+           />
+
+        <Button
+            android:id="@+id/btn_photo"        
+            android:drawableTop="@drawable/main_menu_photo_64x64"           
+            android:text="Фото"
+            style="@style/DefaultButton"
+             />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip" >
+
+        <Button
+            android:id="@+id/btn_news"         
+            android:drawableTop="@drawable/main_menu_news_64x64"           
+            android:text="Новости лиги"
+            style="@style/DefaultButton"
+             />
+
+        <Button
+            android:id="@+id/btn_stats"          
+            android:drawableTop="@drawable/main_menu_stats_64x64"            
+            android:text="Статистика"
+            style="@style/DefaultButton"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip" >
+
+        <Button
+            android:id="@+id/btn_table"            
+            android:drawableTop="@drawable/main_menu_standings_64x64"            
+            android:text="Турнирная таблица"
+            style="@style/DefaultButton"
+            />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_items">
+        <item>Одесса</item>
+        <item>Киев</item>
+        <item>Донецк</item>
+       <item>Азовмаш</item>
+       <item>Говерла</item>
+       <item>Будивельник</item>
+       <item>Химик</item>
+       <item>Черкасские мавпы</item>
+       <item>Ферро-ЗНТУ</item>
+       <item>Крывбассбаскет</item>
+       <item>Галичина</item>
+       <item>Днепр</item>
+       <item>Днепр-Азот</item>
+       <item>Николаев</item>
+        
+    </string-array>    
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ukrainian SuperLeague</string>
+    <string name="action_teams">Команды</string>
+    <string name="action_players">Игроки</string>
+	<string name="action_photo">Фотогалерея</string>
+	<string name="action_video">Видео</string>
+	<string name="action_news">Новости</string>
+	<string name="action_stats">Статистика</string>
+	<string name="action_standings">Турнирная таблица</string>
+	
+    
+    
+    <string name="title_activity_main_menu">Суперлига</string>
+    <string name="title_activity_teams">Команды</string>
+    <string name="title_activity_players">Игроки</string>
+    <string name="title_activity_photo">Фотогалерея</string>
+    <string name="title_activity_video">Видео</string>
+    <string name="title_activity_news">Новости</string>
+    <string name="title_activity_stats">Статистика</string>
+    <string name="title_activity_standings">Турнирная таблица</string>
+    <string name="title_activity_teams2">Команды</string>
+    <string name="title_activity_login">Вход в VK.com</string>     
+     
+    
+    <string name="strId">00</string>
+    <string name="strName">Иванов Иван</string>
+	<string name="strAge">Возраст: 32</string>
+	<string name="strPosition">Форвард</string>	
+	<string name="strHeight">Рост: 202</string>
+	<string name="strWeight">Вес: 121</string>
+	<string name="strTeam">БК Одесса</string>
+	<string name="strCitizenship">Гражданство: Украина</string>	
+	<string name="Separator">---</string>
+</resources>
