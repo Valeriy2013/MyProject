@@ -1,9 +1,6 @@
 package com.sokolovskiy.activities;
 
-import java.util.ArrayList;
-
 import com.perm.kate.api.Api;
-import com.perm.kate.api.WallMessage;
 import com.sokolovskiy.constants.Constants;
 import com.sokolovskiy.mainpackage.Account;
 import com.sokolovskiy.ukrbasketsuperleague.R;
@@ -11,7 +8,6 @@ import com.sokolovskiy.ukrbasketsuperleague.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
