@@ -1,9 +1,12 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.activities;
 
 import java.util.ArrayList;
 
 import com.perm.kate.api.Api;
 import com.perm.kate.api.WallMessage;
+import com.sokolovskiy.constants.Constants;
+import com.sokolovskiy.mainpackage.Account;
+import com.sokolovskiy.ukrbasketsuperleague.R;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -26,7 +29,7 @@ public class NewsActivity extends Activity {
     TextView tv;
     
     Account account=new Account();
-    Api api;
+    Api vkapi;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,12 +38,12 @@ public class NewsActivity extends Activity {
         
         setupUI();
         
-        //Восстановление сохранённой сессии
+        //Во�?�?тановление �?охранённой �?е�?�?ии
         account.restore(this);
         
-        //Если сессия есть создаём API для обращения к серверу
+        //Е�?ли �?е�?�?и�? е�?ть �?оздаём API дл�? обращени�? к �?ерверу
         if(account.access_token!=null)
-            api=new Api(account.access_token, Constants.API_ID);
+            vkapi=new Api(account.access_token, Constants.API_ID);
         
         showButtons();
     }
@@ -87,37 +90,39 @@ public class NewsActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_LOGIN) {
             if (resultCode == RESULT_OK) {
-                //авторизовались успешно 
+                //авторизовали�?ь у�?пешно 
                 account.access_token=data.getStringExtra("token");
                 account.user_id=data.getLongExtra("user_id", 0);
                 account.save(NewsActivity.this);
-                api=new Api(account.access_token, Constants.API_ID);
+                vkapi=new Api(account.access_token, Constants.API_ID);
                 showButtons();
             }
         }
     }
     
     private void displayNews() {
-        //Общение с сервером в отдельном потоке чтобы не блокировать UI поток
-        new Thread(){
+        //Общение �? �?ервером в отдельном потоке чтобы не блокировать UI поток
+    	Intent i = new Intent(getApplicationContext(),ExpandableListActivity.class);
+    	startActivity(i);
+    /*    new Thread(){
             @Override
             public void run(){
                 try {
                     //String text=messageEditText.getText().toString();
                     //api.createWallPost(account.user_id, text, null, null, false, false, false, null, null, null, null);
-                    ArrayList<WallMessage> al =  api.getWallMessages(Constants.VK_GROUP_ID, 3, 0,"all");                    
+                    ArrayList<WallMessage> al =  vkapi.getWallMessages(Constants.VK_GROUP_ID, 5, 10,"all");                    
                     final StringBuilder sb = new StringBuilder(); 
                     for (WallMessage wallMessage : al) {                    	                   	
 						sb.append(wallMessage.text);
 					}
                 	//final WallMessage wm =  al.get(0);                  	
                   	//Log.i("First message to display", allPosts);
-                    //Показать сообщение в UI потоке 
+                    //Показать �?ообщение в UI потоке 
                     //runOnUiThread(successRunnable);
                     runOnUiThread(new Runnable() {
                         public void run() {
                         	tv.setMovementMethod(new ScrollingMovementMethod());
-                        	tv.setText(sb.toString());
+                        	tv.setText(sb.toString()+ "\n\n");
                        }
                    });
                    
@@ -125,20 +130,20 @@ public class NewsActivity extends Activity {
                     e.printStackTrace();
                 }
             }
-        }.start();
+        }.start();*/
     }
     
 //    Runnable successRunnable=new Runnable(){
 //        @Override
 //        public void run() {        	
-//            Toast.makeText(getApplicationContext(), "Запись успешно добавлена", Toast.LENGTH_LONG).show();
+//            Toast.makeText(getApplicationContext(), "Запи�?ь у�?пешно добавлена", Toast.LENGTH_LONG).show();
 //        }
 //    };
     
    
     
     private void logOut() {
-        api=null;
+        vkapi=null;
         account.access_token=null;
         account.user_id=0;
         account.save(NewsActivity.this);
@@ -146,7 +151,7 @@ public class NewsActivity extends Activity {
     }
     
     void showButtons(){
-        if(api!=null){
+        if(vkapi!=null){
             authorizeButton.setVisibility(View.GONE);
             logoutButton.setVisibility(View.VISIBLE);
             postButton.setVisibility(View.VISIBLE);

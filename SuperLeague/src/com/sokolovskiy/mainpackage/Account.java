@@ -1,4 +1,4 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.mainpackage;
 
 import android.content.Context;
 import android.content.SharedPreferences;

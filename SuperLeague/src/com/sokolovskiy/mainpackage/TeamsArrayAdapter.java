@@ -1,4 +1,6 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.mainpackage;
+
+import com.sokolovskiy.ukrbasketsuperleague.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -33,9 +35,9 @@ public class TeamsArrayAdapter extends ArrayAdapter<String> {
 		
 		System.out.println(s);
  
-		if (s.equals("Одесса")) {
+		if (s.equals("Оде�?�?а")) {
 			imageView.setImageResource(R.drawable.team_odessa);
-		} else if (s.equals("Азовмаш")) {
+		} else if (s.equals("�?зовмаш")) {
 			imageView.setImageResource(R.drawable.team_azomash);
 		} else if (s.equals("Донецк")) {
 			imageView.setImageResource(R.drawable.team_donetsk);
@@ -47,19 +49,19 @@ public class TeamsArrayAdapter extends ArrayAdapter<String> {
 			imageView.setImageResource(R.drawable.team_budka);
 		} else if (s.equals("Химик")){
 			imageView.setImageResource(R.drawable.team_khimik);
-		} else if (s.equals("Черкасские мавпы")){
+		} else if (s.equals("Черка�?�?кие мавпы")){
 			imageView.setImageResource(R.drawable.team_cherkasi);
-		} else if (s.equals("Ферро-ЗНТУ")){
+		} else if (s.equals("Ферро-З�?ТУ")){
 			imageView.setImageResource(R.drawable.team_ferro);
-		} else if (s.equals("Крывбассбаскет")){
+		} else if (s.equals("Крывба�?�?ба�?кет")){
 			imageView.setImageResource(R.drawable.team_krivbas);
 		} else if (s.equals("Галичина")){
 			imageView.setImageResource(R.drawable.team_galichina);
 		} else if (s.equals("Днепр")){
 			imageView.setImageResource(R.drawable.team_dnepr);
-		} else if (s.equals("Днепр-Азот")){
+		} else if (s.equals("Днепр-�?зот")){
 			imageView.setImageResource(R.drawable.team_azot);
-		} else if (s.equals("Николаев")){
+		} else if (s.equals("�?иколаев")){
 			imageView.setImageResource(R.drawable.team_nikolaev);
 		}		
  

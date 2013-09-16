@@ -16,57 +16,60 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.MainActivity"
+            android:name="com.sokolovskiy.activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>            
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.MainMenuActivity"
+            android:name="com.sokolovskiy.activities.MainMenuActivity"
             android:label="@string/title_activity_main_menu" >
         </activity>        
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.PlayersActivity"
+            android:name="com.sokolovskiy.activities.PlayersActivity"
             android:label="@string/title_activity_players" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.PhotoActivity"
+            android:name="com.sokolovskiy.activities.PhotoActivity"
             android:label="@string/title_activity_photo" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.VideoActivity"
+            android:name="com.sokolovskiy.activities.VideoActivity"            
             android:label="@string/title_activity_video" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.NewsActivity"
+            android:name="com.sokolovskiy.activities.NewsActivity"            
             android:label="@string/title_activity_news" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.StatsActivity"
+            android:name="com.sokolovskiy.activities.StatsActivity"
             android:label="@string/title_activity_stats" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.StandingsActivity"
+            android:name="com.sokolovskiy.activities.StandingsActivity"         
             android:label="@string/title_activity_standings" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.TeamsActivity"
+            android:name="com.sokolovskiy.activities.TeamsActivity"        
             android:label="@string/title_activity_teams" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.TeamDetailsActivity"
+            android:name="com.sokolovskiy.activities.TeamDetailsActivity"
             android:label="@string/title_activity_teams" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.PlayerDetailsActivity"
+            android:name="com.sokolovskiy.activities.PlayerDetailsActivity"     
             android:label="@string/title_activity_players" >
         </activity>
         <activity
-            android:name="com.sokolovskiy.ukrbasketsuperleague.LoginActivity"
+            android:name="com.sokolovskiy.activities.LoginActivity"    
             android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.sokolovskiy.activities.ExpandableListActivity"    
+            android:label="@string/title_activity_login" >            
         </activity>
     </application>
 

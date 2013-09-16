@@ -1,4 +1,4 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.activities;
 
 
 import java.io.IOException;
@@ -14,6 +14,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.sokolovskiy.ukrbasketsuperleague.R;
 import com.sokolovskiy.utils.BinderData;
 
 import android.os.Bundle;

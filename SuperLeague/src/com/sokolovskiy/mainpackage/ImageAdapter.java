@@ -1,4 +1,6 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.mainpackage;
+
+import com.sokolovskiy.ukrbasketsuperleague.R;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -14,7 +16,7 @@ public class ImageAdapter extends PagerAdapter {
         R.drawable.photo4,R.drawable.photo5,R.drawable.photo6,
         R.drawable.photo7,R.drawable.photo8,R.drawable.photo9
     };
-    ImageAdapter(Context context){
+    public ImageAdapter(Context context){
     	this.context=context;
     }
     @Override

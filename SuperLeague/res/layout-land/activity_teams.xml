@@ -8,7 +8,7 @@
 	
     <fragment
         android:id="@+id/teams_list_view_fragment"
-        android:name="com.sokolovskiy.ukrbasketsuperleague.TeamsListFragment"
+        android:name="com.sokolovskiy.mainpackage.TeamsListFragment"
         android:layout_width="0dp"
     	android:layout_height="match_parent"
     	android:layout_weight="1"
@@ -16,7 +16,7 @@
     
     <fragment
         android:id="@+id/teams_details_fragment"
-        android:name="com.sokolovskiy.ukrbasketsuperleague.TeamDetailsFragment"
+        android:name="com.sokolovskiy.mainpackage.TeamDetailsFragment"
         android:layout_width="0dp"
     	android:layout_height="match_parent"
     	android:layout_weight="1.5" />

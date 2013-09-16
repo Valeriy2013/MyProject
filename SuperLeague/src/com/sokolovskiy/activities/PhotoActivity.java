@@ -1,5 +1,8 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.activities;
 
+
+import com.sokolovskiy.mainpackage.ImageAdapter;
+import com.sokolovskiy.ukrbasketsuperleague.R;
 
 import android.app.Activity;
 import android.os.Bundle;

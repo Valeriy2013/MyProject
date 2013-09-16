@@ -1,6 +1,9 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.activities;
 
 import com.perm.kate.api.Auth;
+import com.sokolovskiy.constants.Constants;
+import com.sokolovskiy.ukrbasketsuperleague.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;

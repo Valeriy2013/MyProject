@@ -1,4 +1,6 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.activities;
+
+import com.sokolovskiy.ukrbasketsuperleague.R;
 
 import android.os.Bundle;
 import android.animation.AnimatorInflater;
@@ -213,7 +215,7 @@ public class MainMenuActivity extends Activity implements OnClickListener {// On
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent intent;
-		// Операции для выбранного пункта меню
+		// Операции дл�? выбранного пункта меню
 		switch (item.getItemId()) {
 		case R.id.action_news:
 			intent = new Intent(this, NewsActivity.class);

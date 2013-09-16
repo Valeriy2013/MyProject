@@ -1,4 +1,6 @@
-package com.sokolovskiy.ukrbasketsuperleague;
+package com.sokolovskiy.activities;
+
+import com.sokolovskiy.ukrbasketsuperleague.R;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -83,9 +85,9 @@ public class PlayerDetailsActivity extends Activity {
 		    tvName.setText(name);
 		    tvNumber.setText(id);
 		    tvPosition.setText(position);
-		    tvAge.setText("Возраст: "+ age);
-		    tvHeight.setText("Рост: " + _height);
-		    tvWeight.setText("Вес: "+ weight);
+		    tvAge.setText("Возра�?т: "+ age);
+		    tvHeight.setText("Ро�?т: " + _height);
+		    tvWeight.setText("Ве�?: "+ weight);
 		    tvCitizenship.setText("Гражд.: "+ citizenship);
 		    tvTeam.setText("Клуб: "+ team);
 		    //tvTeam.append(" Карьера.. Таблица где играл раньше");
