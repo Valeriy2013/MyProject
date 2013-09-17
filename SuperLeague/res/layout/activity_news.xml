@@ -2,35 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"    
     android:orientation="vertical" >
 
-    <TableRow 
-         android:layout_width="wrap_content"
-    		android:layout_height="wrap_content"
-         >
-    <Button
-        android:id="@+id/authorizeVK"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="VK"
-    />
-    
-    <Button
-        android:id="@+id/authorizeF"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Facebook"
-    />
-    
-    <Button
-        android:id="@+id/authorizeG"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Twitter"
-    /> 
-       
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/authorizeVK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="VK" />
+
+        <Button
+            android:id="@+id/authorizeF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="FB" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Show News" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Quit" />
     </TableRow>
-    
+
+    <!--
     <TextView
         android:id="@+id/tv"
         android:layout_width="fill_parent"
@@ -39,19 +43,21 @@
 		android:scrollbars = "vertical"
         android:text="Тестовая запись на стене"
     />
-    
-    <Button
-        android:id="@+id/post"
+    -->
+
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Показать новости"
-    />
-    
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Выход"
-    />
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/expandable_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:textColor="@android:color/white"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll" />
+    </LinearLayout>
 
 </LinearLayout>
