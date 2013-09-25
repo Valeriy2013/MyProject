@@ -20,23 +20,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ExpandableListView;
-import android.widget.TextView;
+import android.widget.ImageButton;
 
 public class NewsActivity extends Activity {
 
 	private final int REQUEST_LOGIN = 1;
 
-	Button authorizeButton;
-	Button logoutButton;
-	Button postButton;
-	// EditText messageEditText;
-	TextView tv;
+	private ImageButton authorizeButton;
+	private ImageButton logoutButton;		
 	private ExpandableListView mExpandableList;
 	private ArrayList<WallMessage> al = new ArrayList<WallMessage>();
-	ArrayList<Parent> arrayParents = new ArrayList<Parent>();
-	ArrayList<String> arrayChildren = new ArrayList<String>();
+	private ArrayList<Parent> arrayParents = new ArrayList<Parent>();
+	private ArrayList<String> arrayChildren = new ArrayList<String>();
 	Account account = new Account();
 	Api vkapi;
 
@@ -59,15 +55,11 @@ public class NewsActivity extends Activity {
 	}
 
 	private void setupUI() {
-		authorizeButton = (Button) findViewById(R.id.authorizeVK);
-		logoutButton = (Button) findViewById(R.id.logout);
-		postButton = (Button) findViewById(R.id.post);
-		mExpandableList = (ExpandableListView) findViewById(R.id.expandable_list);
-		// messageEditText=(EditText)findViewById(R.id.message);
-		// tv=(TextView)findViewById(R.id.tv);
+		authorizeButton = (ImageButton) findViewById(R.id.authorizeVK);
+		logoutButton = (ImageButton) findViewById(R.id.logout);		
+		mExpandableList = (ExpandableListView) findViewById(R.id.expandable_list);		
 		authorizeButton.setOnClickListener(authorizeClick);
-		logoutButton.setOnClickListener(logoutClick);
-		postButton.setOnClickListener(getPostsClick);
+		logoutButton.setOnClickListener(logoutClick);		
 	}
 
 	private OnClickListener authorizeClick = new OnClickListener() {
@@ -84,12 +76,6 @@ public class NewsActivity extends Activity {
 		}
 	};
 
-	private OnClickListener getPostsClick = new OnClickListener() {
-		@Override
-		public void onClick(View v) {
-			displayNews();
-		}
-	};
 
 	private void startLoginActivity() {
 		Intent intent = new Intent();
@@ -106,7 +92,8 @@ public class NewsActivity extends Activity {
 				account.user_id = data.getLongExtra("user_id", 0);
 				account.save(NewsActivity.this);
 				vkapi = new Api(account.access_token, Constants.API_ID);
-				showButtons();
+				showButtons();				
+				
 			}
 		}
 	}
@@ -115,7 +102,9 @@ public class NewsActivity extends Activity {
 		new Thread() {
 			@Override
 			public void run() {
-				try {
+				try {		
+					arrayParents = new ArrayList<Parent>();
+					arrayChildren = new ArrayList<String>();
 					al = vkapi.getWallMessages(Constants.VK_GROUP_ID,
 							Constants.AMOUNT_OF_NEW_POSTS, 0, "all");
 				} catch (MalformedURLException e) {
@@ -135,8 +124,8 @@ public class NewsActivity extends Activity {
 					// for each "i" create a new Parent object to set the title and the children
 					Parent parent = new Parent();
 					
-					if(!al.get(i).text.equals("") && al.get(i).text.length() > 20){
-					parent.setTitle(" " + al.get(i).text.substring(0, 20).toString() + "...");
+					if(!al.get(i).text.equals("") && al.get(i).text.length() > 30){
+					parent.setTitle(" " + al.get(i).text.substring(0, 30).toString() + "...");
 
 					arrayChildren = new ArrayList<String>();					
 					arrayChildren.add(" " + al.get(i).text.toString());				
@@ -148,7 +137,7 @@ public class NewsActivity extends Activity {
 					}
 				}
 				runOnUiThread(new Runnable() {
-					public void run() {
+					public void run() {						
 						mExpandableList.setAdapter(new ExpandableListAdapter(
 								NewsActivity.this, arrayParents));
 					}
@@ -162,25 +151,20 @@ public class NewsActivity extends Activity {
 		vkapi = null;
 		account.access_token = null;
 		account.user_id = 0;
-		account.save(NewsActivity.this);
+		account.save(NewsActivity.this);		
 		showButtons();
 	}
 
 	void showButtons() {
 		if (vkapi != null) {
 			authorizeButton.setVisibility(View.GONE);
-			logoutButton.setVisibility(View.VISIBLE);
-			postButton.setVisibility(View.VISIBLE);
-			// messageEditText.setVisibility(View.VISIBLE);
-			// tv.setVisibility(View.VISIBLE);
+			logoutButton.setVisibility(View.VISIBLE);			
 			mExpandableList.setVisibility(View.VISIBLE);
+			displayNews();
 		} else {
 			authorizeButton.setVisibility(View.VISIBLE);
-			logoutButton.setVisibility(View.GONE);
-			postButton.setVisibility(View.GONE);
-			// messageEditText.setVisibility(View.GONE);
-			// tv.setVisibility(View.GONE);
-			mExpandableList.setVisibility(View.GONE);
+			logoutButton.setVisibility(View.GONE);			
+			mExpandableList.setVisibility(View.GONE);			
 		}
 	}
 }

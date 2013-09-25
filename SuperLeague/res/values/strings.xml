@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ukrainian SuperLeague</string>
+    <string name="app_name">SuperLeagueUA</string>
     <string name="action_teams">Команды</string>
     <string name="action_players">Игроки</string>
 	<string name="action_photo">Фотогалерея</string>
